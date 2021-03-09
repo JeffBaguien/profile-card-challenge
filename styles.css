@@ -1,0 +1,155 @@
+html {
+    font-family: 'Kumbh Sans', sans-serif;
+    font-size: 18px;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    background-color: hsl(185, 75%, 39%);
+    background-image: url(images/bg-pattern-bottom.svg);
+    background-position: left 50vw top 45vh;
+    background-repeat: no-repeat;
+}
+/* background layout */
+
+.top-circle {
+    position: fixed;
+    margin-left: -525px;
+}
+
+.bot-circle {
+    padding-left: 700px ;
+    margin-top: -300px;
+}
+
+.attribution {
+    width: 100%;
+    height: 15px;
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    bottom: 0;
+}
+
+/* profile card layout */
+
+.content {
+    width: 350px;
+    height: 373px;
+    background: white;
+    position: absolute;
+    top: 0;
+    margin-top: 173px;
+    border-radius: 15px;
+    background-image: url(/images/bg-pattern-card.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    display: flex;   
+    box-shadow: 0px 30px 100px -40px hsl(229, 23%, 23%);
+}
+
+.display-img {
+    border-radius: 50px;
+    border: 4px solid white;
+    display: flex;
+    margin-left: 125px;
+    margin-bottom: 90px;
+    align-self: center;
+}
+
+.details {
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    position: absolute;
+    display: grid;
+    grid-template-columns: repeat(24, 15px);
+    grid-template-rows: repeat(24, 15px);
+    
+}
+
+.name {
+    grid-area: 15 / span 15;
+    margin-left: 50% !important;
+    color: hsl(229, 23%, 23%);
+    font-weight: 800 ;
+}
+
+.age {
+    grid-area: 15;
+    color: hsl(227, 10%, 46%);
+    font-weight: 400;
+}
+
+.address {
+    grid-area: 17 / 11;
+    color: hsl(227, 10%, 46%);
+    font-size: 14px;
+}
+
+.border-line {
+    height: 1px;
+    background:hsl(228, 4%, 73%);
+    grid-area: 20 / span 24;
+    width: 100%;
+}
+
+.stats {
+    height: 92%;
+    width: 100%;
+    position: absolute;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-evenly;
+}
+
+.stats p {
+    color:hsl(229, 23%, 23%);
+    font-weight: 800;
+}
+
+.follow {
+    grid-area: 23 / span 7;
+    color:hsl(227, 10%, 46%);
+    font-size: 10px;
+    margin: 0 0 0 50px;
+    letter-spacing: 1px;
+}
+
+.likes {
+    grid-area: 23 / span 7;
+    color:hsl(227, 10%, 46%);
+    font-size: 10px;
+    margin: 0 0 0 53px;
+    letter-spacing: 1px;
+}
+
+.photos {
+    grid-area: 23 / span 7;
+    color:hsl(227, 10%, 46%);
+    font-size: 10px;
+    margin: 0 0 0 45px;
+    letter-spacing: 1px;
+}
+
+.detailed-stat p {
+    color:hsl(227, 10%, 46%);
+    font-size: 11px;
+}
+
+.attribution {
+    font-size: 11px;
+    color: hsl(0, 0%, 0%);
+    display: absolute;
+}
+
+.attribution a {
+    text-decoration: none;
+}
+
